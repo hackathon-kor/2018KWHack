@@ -9,7 +9,13 @@ import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import com.synnapps.carouselview.CarouselView;
+import com.synnapps.carouselview.ViewListener;
+
 public class MainActivity extends AppCompatActivity {
+
+    CarouselView customCarouselView;
+    int NUMBER_OF_PAGES = 5;
 
     private Button[][] buttons = new Button[7][3];
     private int[][] btnid;
@@ -19,28 +25,22 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        buttons[0][0] = (Button) findViewById(R.id.btn0);
-        buttons[0][1] = (Button) findViewById(R.id.btn1);
-        buttons[0][2] = (Button) findViewById(R.id.btn2);
-        buttons[0][3] = (Button) findViewById(R.id.btn3);
-        buttons[0][4] = (Button) findViewById(R.id.btn4);
-        buttons[0][5] = (Button) findViewById(R.id.btn5);
-        buttons[0][6] = (Button) findViewById(R.id.btn6);
-        buttons[0][7] = (Button) findViewById(R.id.btn7);
-        buttons[0][8] = (Button) findViewById(R.id.btn8);
-        buttons[0][9] = (Button) findViewById(R.id.btn9);
-        buttons[1][0] = (Button) findViewById(R.id.btn10);
-        buttons[1][1] = (Button) findViewById(R.id.btn11);
-        buttons[1][2] = (Button) findViewById(R.id.btn12);
-        buttons[1][3] = (Button) findViewById(R.id.btn13);
-        buttons[1][4] = (Button) findViewById(R.id.btn14);
-        buttons[1][5] = (Button) findViewById(R.id.btn15);
-        buttons[1][6] = (Button) findViewById(R.id.btn16);
-        buttons[1][7] = (Button) findViewById(R.id.btn17);
-        buttons[1][8] = (Button) findViewById(R.id.btn18);
-        buttons[1][9] = (Button) findViewById(R.id.btn19);
-        buttons[2][0] = (Button) findViewById(R.id.btn20);
+        customCarouselView = (CarouselView) findViewById(R.id.customCarouselView);
+        customCarouselView.setPageCount(NUMBER_OF_PAGES);
+        // set ViewListener for custom view
+        customCarouselView.setViewListener(viewListener);
     }
+
+    ViewListener viewListener = new ViewListener() {
+
+        @Override
+        public View setViewForPosition(int position) {
+            View customView = getLayoutInflater().inflate(R.layout.weekly, null);
+            //set view attributes here
+
+            return customView;
+        }
+    };
 
     private View.OnClickListener btnListener = new View.OnClickListener() {
 

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="WeeklyButtons">
+        <attr name="btn0" format="reference|integer" />
+        <attr name="btn1" format="reference|integer" />
+        <attr name="btn2" format="reference|integer" />
+        <attr name="btn3" format="reference|integer" />
+        <attr name="btn4" format="reference|integer" />
+        <attr name="btn5" format="reference|integer" />
+        <attr name="btn6" format="reference|integer" />
+    </declare-styleable>
+
+</resources>

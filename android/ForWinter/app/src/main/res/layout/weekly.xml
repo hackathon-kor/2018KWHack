@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <GridLayout
+        android:id="@+id/firstLine"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/growther"
+        android:layout_centerHorizontal="true"
+        android:columnCount="4"
+        android:orientation="horizontal"
+        android:rowCount="1">
+
+        <ImageButton
+            android:id="@+id/btn0"
+            android:layout_width="115px"
+            android:layout_height="115px"
+            android:layout_marginRight="5px"
+            android:layout_marginTop="5px"
+            android:background="@color/carrotBeige"
+            android:src="@drawable/question_mark_button"
+            android:text=" "
+            android:textAllCaps="false"
+            android:textColor="#ffffff" />
+
+        <ImageButton
+            android:id="@+id/btn1"
+            android:layout_width="115px"
+            android:layout_height="115px"
+            android:layout_marginRight="5px"
+            android:layout_marginTop="5px"
+            android:background="@color/carrotBeige"
+            android:src="@drawable/question_mark_button"
+            android:text=" "
+            android:textAllCaps="false"
+            android:textColor="#ffffff" />
+
+        <ImageButton
+            android:id="@+id/btn2"
+            android:layout_width="115px"
+            android:layout_height="115px"
+            android:layout_marginRight="5px"
+            android:layout_marginTop="5px"
+            android:background="@color/carrotBeige"
+            android:src="@drawable/question_mark_button"
+            android:text=" "
+            android:textAllCaps="false"
+            android:textColor="#ffffff" />
+
+        <ImageButton
+            android:id="@+id/btn3"
+            android:layout_width="115px"
+            android:layout_height="115px"
+            android:layout_marginRight="5px"
+            android:layout_marginTop="5px"
+            android:background="@color/carrotBeige"
+            android:src="@drawable/question_mark_button"
+            android:text=" "
+            android:textAllCaps="false"
+            android:textColor="#ffffff" />
+    </GridLayout>
+
+    <GridLayout
+        android:id="@+id/secondLine"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/growther"
+        android:layout_centerHorizontal="true"
+        android:columnCount="3"
+        android:orientation="horizontal"
+        android:rowCount="1">
+
+        <ImageButton
+            android:id="@+id/btn4"
+            android:layout_width="115px"
+            android:layout_height="115px"
+            android:layout_marginRight="5px"
+            android:layout_marginTop="5px"
+            android:background="@color/carrotBeige"
+            android:src="@drawable/question_mark_button"
+            android:text=" "
+            android:textAllCaps="false"
+            android:textColor="#ffffff" />
+
+        <ImageButton
+            android:id="@+id/btn5"
+            android:layout_width="115px"
+            android:layout_height="115px"
+            android:layout_marginRight="5px"
+            android:layout_marginTop="5px"
+            android:background="@color/carrotBeige"
+            android:src="@drawable/question_mark_button"
+            android:text=" "
+            android:textAllCaps="false"
+            android:textColor="#ffffff" />
+
+        <ImageButton
+            android:id="@+id/btn6"
+            android:layout_width="115px"
+            android:layout_height="115px"
+            android:layout_marginRight="5px"
+            android:layout_marginTop="5px"
+            android:background="@color/carrotBeige"
+            android:src="@drawable/question_mark_button"
+            android:text=" "
+            android:textAllCaps="false" />
+    </GridLayout>
+</LinearLayout>
