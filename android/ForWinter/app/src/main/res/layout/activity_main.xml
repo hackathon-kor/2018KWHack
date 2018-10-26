@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="@color/carrotBeige">
+
+    <GridLayout
+        android:id="@+id/table"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:columnCount="7"
+        android:rowCount="3"
+        android:orientation="horizontal">
+
+        <Button android:id="@+id/btn0" android:text="\?" android:layout_width="115px" android:layout_height="115px" android:textColor="#ffffff" android:layout_marginTop="5px" android:textAllCaps="false" android:layout_marginRight="5px" android:background="#408080" />
+        <Button android:id="@+id/btn1" android:text="\?" android:layout_width="115px" android:layout_height="115px" android:textColor="#ffffff" android:layout_marginTop="5px" android:textAllCaps="false" android:layout_marginRight="5px" android:background="#408080"/>
+        <Button android:id="@+id/btn2" android:text="\?" android:layout_width="115px" android:layout_height="115px" android:textColor="#ffffff" android:layout_marginTop="5px" android:textAllCaps="false" android:layout_marginRight="5px" android:background="#408080"/>
+        <Button android:id="@+id/btn3" android:text="\?" android:layout_width="115px" android:layout_height="115px" android:textColor="#ffffff" android:layout_marginTop="5px" android:textAllCaps="false" android:layout_marginRight="5px" android:background="#408080"/>
+        <Button android:id="@+id/btn4" android:text="\?" android:layout_width="115px" android:layout_height="115px" android:textColor="#ffffff" android:layout_marginTop="5px" android:textAllCaps="false" android:layout_marginRight="5px" android:background="#408080"/>
+        <Button android:id="@+id/btn5" android:text="\?" android:layout_width="115px" android:layout_height="115px" android:textColor="#ffffff" android:layout_marginTop="5px" android:textAllCaps="false" android:layout_marginRight="5px" android:background="#408080"/>
+        <Button android:id="@+id/btn6" android:text="\?" android:layout_width="115px" android:layout_height="115px" android:textColor="#ffffff" android:layout_marginTop="5px" android:textAllCaps="false" android:layout_marginRight="5px" android:background="#408080"/>
+        <Button android:id="@+id/btn7" android:text="\?" android:layout_width="115px" android:layout_height="115px" android:textColor="#ffffff" android:layout_marginTop="5px" android:textAllCaps="false" android:layout_marginRight="5px" android:background="#408080"/>
+        <Button android:id="@+id/btn8" android:text="\?" android:layout_width="115px" android:layout_height="115px" android:textColor="#ffffff" android:layout_marginTop="5px" android:textAllCaps="false" android:layout_marginRight="5px" android:background="#408080"/>
+        <Button android:id="@+id/btn9" android:text="\?" android:layout_width="115px" android:layout_height="115px" android:textColor="#ffffff" android:layout_marginTop="5px" android:textAllCaps="false" android:layout_marginRight="5px" android:background="#408080"/>
+        <Button android:id="@+id/btn10" android:text="\?" android:layout_width="115px" android:layout_height="115px" android:textColor="#ffffff" android:layout_marginTop="5px" android:textAllCaps="false" android:layout_marginRight="5px" android:background="#408080"/>
+        <Button android:id="@+id/btn11" android:text="\?" android:layout_width="115px" android:layout_height="115px" android:textColor="#ffffff" android:layout_marginTop="5px" android:textAllCaps="false" android:layout_marginRight="5px" android:background="#408080"/>
+        <Button android:id="@+id/btn12" android:text="\?" android:layout_width="115px" android:layout_height="115px" android:textColor="#ffffff" android:layout_marginTop="5px" android:textAllCaps="false" android:layout_marginRight="5px" android:background="#408080"/>
+        <Button android:id="@+id/btn13" android:text="\?" android:layout_width="115px" android:layout_height="115px" android:textColor="#ffffff" android:layout_marginTop="5px" android:textAllCaps="false" android:layout_marginRight="5px" android:background="#408080"/>
+        <Button android:id="@+id/btn14" android:text="\?" android:layout_width="115px" android:layout_height="115px" android:textColor="#ffffff" android:layout_marginTop="5px" android:textAllCaps="false" android:layout_marginRight="5px" android:background="#408080"/>
+        <Button android:id="@+id/btn15" android:text="\?" android:layout_width="115px" android:layout_height="115px" android:textColor="#ffffff" android:layout_marginTop="5px" android:textAllCaps="false" android:layout_marginRight="5px" android:background="#408080"/>
+        <Button android:id="@+id/btn16" android:text="\?" android:layout_width="115px" android:layout_height="115px" android:textColor="#ffffff" android:layout_marginTop="5px" android:textAllCaps="false" android:layout_marginRight="5px" android:background="#408080"/>
+        <Button android:id="@+id/btn17" android:text="\?" android:layout_width="115px" android:layout_height="115px" android:textColor="#ffffff" android:layout_marginTop="5px" android:textAllCaps="false" android:layout_marginRight="5px" android:background="#408080"/>
+        <Button android:id="@+id/btn18" android:text="\?" android:layout_width="115px" android:layout_height="115px" android:textColor="#ffffff" android:layout_marginTop="5px" android:textAllCaps="false" android:layout_marginRight="5px" android:background="#408080"/>
+        <Button android:id="@+id/btn19" android:text="\?" android:layout_width="115px" android:layout_height="115px" android:textColor="#ffffff" android:layout_marginTop="5px" android:textAllCaps="false" android:layout_marginRight="5px" android:background="#408080"/>
+        <Button android:id="@+id/btn20" android:text="\?" android:layout_width="115px" android:layout_height="115px" android:textColor="#ffffff" android:layout_marginTop="5px" android:textAllCaps="false" android:layout_marginRight="5px" android:background="#408080"/>
+    </GridLayout>
+
+    <LinearLayout
+        android:id="@+id/menu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:columnCount="4"
+        android:rowCount="1"
+        android:orientation="horizontal"
+        android:layout_below="@id/table">
+
+        <Button android:id="@+id/mn0" android:layout_width="205px" android:layout_height="115px" android:layout_marginRight="5px" android:text="m" />
+        <Button android:id="@+id/mn1" android:layout_width="205px" android:layout_height="115px" android:layout_marginRight="5px" android:text="e" />
+        <Button android:id="@+id/mn2" android:layout_width="205px" android:layout_height="115px" android:layout_marginRight="5px" android:text="n" />
+        <Button android:id="@+id/mn3" android:layout_width="205px" android:layout_height="115px" android:layout_marginRight="5px" android:text="u" />
+    </LinearLayout>
+
+</RelativeLayout>
