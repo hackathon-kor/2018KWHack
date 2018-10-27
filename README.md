@@ -1,3 +1,11 @@
+# 오늘 담근
+
+배포: https://kwhack-2018.firebaseapp.com/
+
+- KW해커톤 준우승작
+
+
+
 # 2018KWHack
 
 2018 광운대 KW해커톤(조하연, 정석호, 이아현)
