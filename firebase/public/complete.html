@@ -1,0 +1,76 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <meta charset="utf-8">
+    <title>splash screen example</title>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+        crossorigin="anonymous"></script>
+    <style type="text/css">
+        html {
+            margin: 0 auto;
+            width: 95%;
+            background: #ffffef;
+        }
+
+        .wrapper {
+            width: 90%;
+            margin: 0 auto;
+        }
+
+        body {
+            margin: 0
+        }
+
+        .message {
+            background: image("design/message.png")
+        }
+
+        .subject {
+            height: 50%
+        }
+
+        .carrot {
+            margin-top: 3vh;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="ment">
+        <img style="    
+            width: 100%;
+    margin-top: 5vh;
+    margin-bottom: -4vh;" src="design/final_ment.png" />
+    </div>
+    <div class="carrot">
+        <img style="    
+                width: 50%;" src="design/final_carrot.png" />
+    </div>
+    <div class="count">
+        <div id="count" style="
+            position: absolute;
+    left: 50%;
+    font-weight: bold;
+    font-size: 5vh;
+    top: 80vh;
+    z-index: 99;
+    margin-left: 7vw;
+    margin-top: 1vh;">
+
+        </div>
+        <img style="    
+        position: absolute;
+    bottom: -1%;
+    width: 104%;
+    left: -2%;" src="design/count_merge.png" />
+    </div>
+</body>
+
+<script>
+    $("#count").html(parseInt((Math.random() * 100) % 27));
+</script>
+
+</html>

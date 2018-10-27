@@ -1,0 +1,90 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <meta charset="utf-8">
+    <title>splash screen example</title>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+        crossorigin="anonymous"></script>
+    <style type="text/css">
+        html {
+            margin: 0 auto;
+            width: 95%;
+            background: #ffffef;
+        }
+
+        .wrapper {
+            width: 90%;
+            margin: 0 auto;
+        }
+
+        body {
+            margin: 0
+        }
+
+        .message {
+            background: image("design/message.png")
+        }
+
+        .subject {
+            height: 50%
+        }
+
+        .message {
+            height: 50%
+        }
+    </style>
+</head>
+
+<body>
+    <div class="subject">
+        <img style="    margin: 10vw 0 15vw 0;
+        width: 100%;" src="design/memo_memory.png" />
+    </div>
+    <div class="message">
+        <div id="message" style="margin: 3vw 10vw 0 15vw;"></div>
+        <img id="complete" style="    width: 100%;
+        position: absolute;
+        top: 25%;
+        left: 0%;" src="design/message.png" />
+    </div>
+</body>
+
+<script>
+    var arr = ["1. 가끔 아침에 혼자 해변을 산책하라.햇빛이 물에 반사되는 것을 보고 네가 인생에서 가장 사랑하는 것들을 생각하라. 행복해져라.",
+
+        "2. 올해 우리가 함께 익혔던 새로운 단어들을 사용해 보라. 더 많은 걸 말할 수 있게 되면 더 많은 걸 생각할 수 있게 되고, 더 많은 걸 생각할 수 있게 되면 더 자유로워진다.",
+
+        "3. 최대한 책을 많이 읽어라. 하지만 읽어야 하기 때문에 읽지는 마라. 여름은 모험과 꿈을 북돋우기 때문에, 책을 읽으면 날아다니는 제비 같은 기분이 들 거다. 독서는 최고의 반항이다. (무엇을 읽어야 할지 모르겠다면, 나를 찾아와라)",
+
+        "4. 네게 부정적인, 혹은 공허한 느낌을 들게 하는 것, 상황, 사람들을 피하라. 자극이 되는 상황과 너를 풍요롭게 하고, 너를 이해하고 있는 그대로의 너를 인정하는 사람들을 찾아라.",
+
+        "5. 슬프거나 겁이 나더라도 걱정하지 마라. 여름은 영혼을 혼란스럽게 할 수 있다. 너의 느낌을 이야기하는 방법으로 일기를 써 봐라. (너가 수락한다면, 개학 후에 함께 읽어보자)",
+
+        "6. 부끄러움 없이 춤을 추어라. 집 근처의 댄스 플로어에서, 너의 방에서 혼자 추어도 된다. 여름은 무조건 춤이다. 춤을 출 수 있을 때, 추지 않는 건 어리석다.",
+
+        "7. 최소한 한 번은 해가 뜨는 것을 보아라. 말없이 숨을 쉬어라. 눈을 감고 감사함을 느껴라.",
+
+        "8. 스포츠 활동을 많이 해라.",
+
+        "9. 너를 황홀하게 만드는 사람을 만난다면 그 사람에게 최대한 진심으로 정중하게 말해라. 상대가 이해하지 못해도 상관없다. 이해하지 못한다면 그 사람은 너의 짝이 아니었던 것이다. 이해한다면 2015년의 여름은 황금 같은 시간이 될 것이다. (이게 잘 되지 않았다면 8번으로 돌아가라.)",
+
+        "10. 우리 수업에서 필기했던 것을 다시 훑어보라. 우리가 읽고 배웠던 것들을 너에게 일어났던 일들과 비교해 보라.",
+
+        "11. 햇빛처럼 행복하고 바다처럼 길들일 수 없는 사람이 되어라.",
+
+        "12. 욕하지 마라. 늘 매너를 지키고 친절하게 행동하라.",
+
+        "13. 언어 능력을 기르고 꿈꾸는 능력을 늘리기 위해 가슴 아픈 대화가 나오는 영화를 보아라(가능하다면 영어로). 엔딩 크레딧이 올라간다고 영화가 끝나는 것은 아니다. 너의 여름을 살고 경험하며 다시 한 번 너만의 영화를 살아보아라.",
+
+        "14. 빛나는 햇빛 속이나 뜨거운 여름 밤에 네 삶이 어떻게 될 수 있는지, 어떻게 되어야 하는지 꿈꾸어 보아라. 여름에는 포기하지 않기 위해서, 꿈을 좇기 위해서 네가 할 수 있는 일을 다 하라.",
+
+        "15. 착하게 살아라."];
+    $("#message").html(arr[parseInt((Math.random() * 100) % 15)]);
+    $("#complete").on('click', function () {
+        window.location.href = "./complete.html";
+    });
+</script>
+
+</html>

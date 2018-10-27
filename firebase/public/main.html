@@ -1,0 +1,391 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <meta charset="utf-8">
+    <title>splash screen example</title>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+        crossorigin="anonymous"></script>
+    <style type="text/css">
+        html {
+            margin: 0 auto;
+            width: 95%;
+            background: #ffffef;
+        }
+
+        .wrapper {
+            width: 90%;
+            margin: 0 auto;
+        }
+
+        body {
+            margin: 0
+        }
+
+        .inner-contents {
+            display: inline-block;
+            margin: 2px 0 2px 0;
+        }
+
+        .carrot-btn {}
+
+        button img {
+            width: 15vw;
+        }
+
+        .marg {
+            display: inline-block;
+            width: 5vh;
+        }
+
+        .slick-dots li button:before {
+            color: orange !important;
+            font-size: 30px !important
+        }
+
+        .slick-dotted.slick-slider {
+            margin-bottom: 15px !important;
+        }
+
+        .hide {}
+
+        .slick-dots li button:before {
+            line-height: 10px !important;
+        }
+    </style>
+    <script type="text/javascript" src="slick/slick.js"></script>
+    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
+</head>
+
+<body>
+    <div></div>
+    <div class="wrapper">
+        <div style="
+        display: inline-block;
+        text-align: center;
+        height: 40vh;
+        max-height: 40vh;
+    ">
+            <img id="water-carrot" style="width: 75%; " src="design/watercarrot1.png" />
+        </div>
+        <div class="your-class">
+            <div class="contents">
+                <div>
+                    <div class="inner-contents">
+                        <button class="carrot-btn"><img style="z-index: 1" status=0 src="design/question.png" /></button>
+                    </div>
+                    <div class="inner-contents">
+                        <button class="carrot-btn"><img style="z-index: 1" status=0 src="design/question.png" /></button>
+                    </div>
+                    <div class="inner-contents">
+                        <button class="carrot-btn"><img style="z-index: 1" status=0 src="design/question.png" /></button>
+                    </div>
+                    <div class="inner-contents">
+                        <button class="carrot-btn"><img style="z-index: 1" status=0 src="design/question.png" /></button>
+                    </div>
+                </div>
+                <div>
+                    <div class="marg"></div>
+                    <div class="inner-contents">
+                        <button class="carrot-btn"><img style="z-index: 1" status=0 src="design/question.png" /></button>
+                    </div>
+                    <div class="inner-contents">
+                        <button class="carrot-btn"><img style="z-index: 1" status=0 src="design/question.png" /></button>
+                    </div>
+                    <div class="inner-contents">
+                        <button class="carrot-btn"><img style="z-index: 1" status=0 src="design/question.png" /></button>
+                    </div>
+                    <div class="marg"></div>
+                </div>
+            </div>
+            <div class="contents">
+                <div>
+                    <div class="inner-contents">
+                        <button class="carrot-btn"><img style="z-index: 1" status=0 src="design/question.png" /></button>
+                    </div>
+                    <div class="inner-contents">
+                        <button class="carrot-btn"><img style="z-index: 1" status=0 src="design/question.png" /></button>
+                    </div>
+                    <div class="inner-contents">
+                        <button class="carrot-btn"><img style="z-index: 1" status=0 src="design/question.png" /></button>
+                    </div>
+                    <div class="inner-contents">
+                        <button class="carrot-btn"><img style="z-index: 1" status=0 src="design/question.png" /></button>
+                    </div>
+                </div>
+                <div>
+                    <div class="marg"></div>
+                    <div class="inner-contents">
+                        <button class="carrot-btn"><img style="z-index: 1" status=0 src="design/question.png" /></button>
+                    </div>
+                    <div class="inner-contents">
+                        <button class="carrot-btn"><img style="z-index: 1" status=0 src="design/question.png" /></button>
+                    </div>
+                    <div class="inner-contents">
+                        <button class="carrot-btn"><img style="z-index: 1" status=0 src="design/question.png" /></button>
+                    </div>
+                    <div class="marg"></div>
+                </div>
+            </div>
+            <div class="contents">
+                <div>
+                    <div class="inner-contents">
+                        <button class="carrot-btn"><img style="z-index: 1" status=0 src="design/question.png" /></button>
+                    </div>
+                    <div class="inner-contents">
+                        <button class="carrot-btn"><img style="z-index: 1" status=0 src="design/question.png" /></button>
+                    </div>
+                    <div class="inner-contents">
+                        <button class="carrot-btn"><img style="z-index: 1" status=0 src="design/question.png" /></button>
+                    </div>
+                    <div class="inner-contents">
+                        <button class="carrot-btn"><img style="z-index: 1" status=0 src="design/question.png" /></button>
+                    </div>
+                </div>
+                <div>
+                    <div class="marg"></div>
+                    <div class="inner-contents">
+                        <button class="carrot-btn"><img style="z-index: 1" status=0 src="design/question.png" /></button>
+                    </div>
+                    <div class="inner-contents">
+                        <button class="carrot-btn"><img style="z-index: 1" status=0 src="design/question.png" /></button>
+                    </div>
+                    <div class="inner-contents">
+                        <button class="carrot-btn"><img style="z-index: 1" status=0 src="design/question.png" /></button>
+                    </div>
+                    <div class="marg"></div>
+                </div>
+            </div>
+            <div class="contents">
+                <div>
+                    <div class="inner-contents">
+                        <button class="carrot-btn"><img style="z-index: 1" status=0 src="design/question.png" /></button>
+                    </div>
+                    <div class="inner-contents">
+                        <button class="carrot-btn"><img style="z-index: 1" status=0 src="design/question.png" /></button>
+                    </div>
+                    <div class="inner-contents">
+                        <button class="carrot-btn"><img style="z-index: 1" status=0 src="design/question.png" /></button>
+                    </div>
+                    <div class="inner-contents">
+                        <button class="carrot-btn"><img style="z-index: 1" status=0 src="design/question.png" /></button>
+                    </div>
+                </div>
+                <div>
+                    <div class="marg"></div>
+                    <div class="inner-contents">
+                        <button class="carrot-btn"><img style="z-index: 1" status=0 src="design/question.png" /></button>
+                    </div>
+                    <div class="inner-contents">
+                        <button class="carrot-btn"><img style="z-index: 1" status=0 src="design/question.png" /></button>
+                    </div>
+                    <div class="inner-contents">
+                        <button class="carrot-btn"><img style="z-index: 1" status=0 src="design/question.png" /></button>
+                    </div>
+                    <div class="marg"></div>
+                </div>
+            </div>
+            <div class="contents">
+                <div>
+                    <div class="inner-contents">
+                        <button class="carrot-btn"><img style="z-index: 1" status=0 src="design/question.png" /></button>
+                    </div>
+                    <div class="inner-contents">
+                        <button class="carrot-btn"><img style="z-index: 1" status=0 src="design/question.png" /></button>
+                    </div>
+                    <div class="inner-contents">
+                        <button class="carrot-btn"><img style="z-index: 1" status=0 src="design/question.png" /></button>
+                    </div>
+                    <div class="inner-contents">
+                        <button class="carrot-btn"><img style="z-index: 1" status=0 src="design/question.png" /></button>
+                    </div>
+                </div>
+                <div>
+                    <div class="marg"></div>
+                    <div class="inner-contents">
+                        <button class="carrot-btn"><img style="z-index: 1" status=0 src="design/question.png" /></button>
+                    </div>
+                    <div class="inner-contents">
+                        <button class="carrot-btn"><img style="z-index: 1" status=0 src="design/question.png" /></button>
+                    </div>
+                    <div class="inner-contents">
+                        <button class="carrot-btn"><img style="z-index: 1" status=0 src="design/question.png" /></button>
+                    </div>
+                    <div class="marg"></div>
+                </div>
+            </div>
+            <div class="contents">
+                <div>
+                    <div class="inner-contents">
+                        <button class="carrot-btn"><img style="z-index: 1" status=0 src="design/question.png" /></button>
+                    </div>
+                    <div class="inner-contents">
+                        <button class="carrot-btn"><img style="z-index: 1" status=0 src="design/question.png" /></button>
+                    </div>
+                    <div class="inner-contents">
+                        <button class="carrot-btn"><img style="z-index: 1" status=0 src="design/question.png" /></button>
+                    </div>
+                    <div class="inner-contents">
+                        <button class="carrot-btn"><img style="z-index: 1" status=0 src="design/question.png" /></button>
+                    </div>
+                </div>
+                <div>
+                    <div class="marg"></div>
+                    <div class="inner-contents">
+                        <button class="carrot-btn"><img style="z-index: 1" status=0 src="design/question.png" /></button>
+                    </div>
+                    <div class="inner-contents">
+                        <button class="carrot-btn"><img style="z-index: 1" status=0 src="design/question.png" /></button>
+                    </div>
+                    <div class="inner-contents">
+                        <button class="carrot-btn"><img style="z-index: 1" status=0 src="design/question.png" /></button>
+                    </div>
+                    <div class="marg"></div>
+                </div>
+            </div>
+            <div class="contents">
+                <div>
+                    <div class="inner-contents">
+                        <button class="carrot-btn"><img style="z-index: 1" status=0 src="design/question.png" /></button>
+                    </div>
+                    <div class="inner-contents">
+                        <button class="carrot-btn"><img style="z-index: 1" status=0 src="design/question.png" /></button>
+                    </div>
+                    <div class="inner-contents">
+                        <button class="carrot-btn"><img style="z-index: 1" status=0 src="design/question.png" /></button>
+                    </div>
+                    <div class="inner-contents">
+                        <button class="carrot-btn"><img style="z-index: 1" status=0 src="design/question.png" /></button>
+                    </div>
+                </div>
+                <div>
+                    <div class="marg"></div>
+                    <div class="inner-contents">
+                        <button class="carrot-btn"><img style="z-index: 1" status=0 src="design/question.png" /></button>
+                    </div>
+                    <div class="inner-contents">
+                        <button class="carrot-btn"><img style="z-index: 1" status=0 src="design/question.png" /></button>
+                    </div>
+                    <div class="inner-contents">
+                        <button class="carrot-btn"><img style="z-index: 1" status=0 src="design/question.png" /></button>
+                    </div>
+                    <div class="marg"></div>
+                </div>
+            </div>
+            <div class="contents">
+                <div>
+                    <div class="inner-contents">
+                        <button class="carrot-btn"><img style="z-index: 1" status=0 src="design/question.png" /></button>
+                    </div>
+                    <div class="inner-contents">
+                        <button class="carrot-btn"><img style="z-index: 1" status=0 src="design/question.png" /></button>
+                    </div>
+                    <div class="inner-contents">
+                        <button class="carrot-btn"><img style="z-index: 1" status=0 src="design/question.png" /></button>
+                    </div>
+                    <div class="inner-contents">
+                        <button class="carrot-btn"><img style="z-index: 1" status=0 src="design/question.png" /></button>
+                    </div>
+                </div>
+                <div>
+                    <div class="marg"></div>
+                    <div class="inner-contents">
+                        <button class="carrot-btn"><img style="z-index: 1" status=0 src="design/question.png" /></button>
+                    </div>
+                    <div class="inner-contents">
+                        <button class="carrot-btn"><img style="z-index: 1" status=0 src="design/question.png" /></button>
+                    </div>
+                    <div class="inner-contents go-next">
+                        <button class="carrot-btn go-next"><img class="go-next" style="z-index: 1" status=0 src="design/question.png" /></button>
+                    </div>
+                    <div class="marg"></div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <img style="width: 100%;" src="design/home_ment.png" />
+        </div>
+    </div>
+    </div>
+</body>
+<script>
+    $(document).ready(function () {
+        $('.your-class').slick({
+            dots: true, infinite: false
+        });
+        $('.inner-contents').on("click", (e) => {
+            if (e.target.className.indexOf("go-next") != -1) {
+                e.preventDefault();
+                window.location.href = "./carrot.html";
+            } else {
+                if (e.target.tagName == 'DIV') {
+                    return;
+                } else if (e.target.tagName == 'BUTTON') {
+                    return;
+                } else {
+                    window.e = e;
+                    console.log(e);
+                }
+
+                if (parseInt($(e.target).attr("status")) == 0) {
+                    $(e.target).attr("src", "design/box_clickable.png");
+                    $(e.target).attr("status", 1);
+                } else if (parseInt($(e.target).attr("status")) == 1) {
+                    $(e.target).attr("src", "design/carrot.png");
+                    $(e.target).attr("status", 2);
+                } else if (parseInt($(e.target).attr("status")) == 2) {
+                    $(e.target).attr("src", "design/emptycarrot.png");
+                    $(e.target).attr("status", 3);
+                } else if (parseInt($(e.target).attr("status")) == 3) {
+                    $(e.target).attr("src", "design/question.png");
+                    $(e.target).attr("status", 0);
+                }
+            }
+        });
+
+    });
+    function updateCarrot(current) {
+        switch (current) {
+            case 0:
+                $("#water-carrot")[0].src = "design/watercarrot1.png";
+                break;
+            case 1:
+                $("#water-carrot")[0].src = "design/watercarrot2.png";
+                break;
+            case 2:
+                $("#water-carrot")[0].src = "design/watercarrot3.png";
+                break;
+            case 3:
+                $("#water-carrot")[0].src = "design/watercarrot4.png";
+                break;
+            case 4:
+                $("#water-carrot")[0].src = "design/watercarrot5.png";
+                break;
+            case 5:
+                $("#water-carrot")[0].src = "design/watercarrot6.png";
+                break;
+            case 6:
+                $("#water-carrot")[0].src = "design/watercarrot7.png";
+                break;
+            case 7:
+                $("#water-carrot")[0].src = "design/watercarrot8.png";
+                break;
+        }
+    }
+    $('.your-class').on('beforeChange', function (event, slick, direction) {
+        updateCarrot(slick.currentSlide);
+    });
+    $('.your-class').on('afterChange', function (event, slick, direction) {
+        updateCarrot(slick.currentSlide);
+    });
+    $('.your-class').on('swipe', function (event, slick, direction) {
+        updateCarrot(slick.currentSlide);
+    });
+    $('.your-class').on('edge', function (event, slick, direction) {
+        updateCarrot(slick.currentSlide);
+    });
+</script>
+
+</html>
